@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharanya Dasgupta | Researcher & Engineer</title>
+    <meta name="description"
+        content="Portfolio of Sharanya Dasgupta, Master's Student at ISI specializing in LLMs and Machine Learning.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- <a href="#" class="logo">SD.</a> -->
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#industry">Industry</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"><i
+                            class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <img src="image.jpg" alt="Sharanya Dasgupta" class="profile-img animate-fade-up">
+            <h1 class="animate-fade-up">Sharanya Dasgupta</h1>
+            <!-- <h2 class="animate-fade-up delay-1">Student Researcher at Indian Statistical Institute</h2> -->
+            <p class="animate-fade-up delay-2">Data Scientist & ML Researcher Focused on LLM Safety and Reliability</p>
+            <div class="social-links animate-fade-up delay-3">
+                <a href="https://www.linkedin.com/in/sharanya-dasgupta/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=3dyAr0wAAAAJ&hl=en" target="_blank"
+                    aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://openreview.net/profile?id=%7ESharanya_Dasgupta1" target="_blank"
+                    aria-label="OpenReview"><i class="fas fa-book-open"></i></a>
+                <a href="https://github.com/sharanya-dasgupta001/" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:sharanyadasgupta@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#about" class="btn btn-primary animate-fade-up delay-4">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m a student researcher at the Indian Statistical Institute. My current focus lies on the
+                        safety, reliability, and behavior of large language models. </p>
+                    <p>My research explores how these models represent knowledge, how failures arise, and how we can
+                        systematically detect and mitigate them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Master of Technology</h3>
+                        <h4>Indian Statistical Institute</h4>
+                        <p>Computer and Communication Sciences Division</p>
+                    </div>
+                </div>
+                <!-- Add previous education here if known, otherwise placeholder -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Jadavpur University</h4>
+                        <!-- <p>Major in Computer Science or related field.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <h3>Hallushift++: Bridging Language and Vision through Internal Representation Shifts for
+                        Hierarchical Hallucinations in MLLMs</h3>
+                    <p class="authors">Sujoy Nath, Arkaprabha Basu, Sharanya Dasgupta, Swagatam Das
+                    </p>
+                    <p class="venue">ICVGIP 2025</p>
+                    <div class="card-links">
+                        <button class="btn-text show-abstract"
+                            data-abstract="Multimodal Large Language Models (MLLMs) have demonstrated
+remarkable capabilities in vision-language understanding tasks.
+While these models often produce linguistically coherent output,
+they often suffer from hallucinations, generating descriptions that
+are factually inconsistent with the visual content, potentially leading to adverse consequences. Therefore, the assessment of hallucinations in MLLM has become increasingly crucial in the model
+development process. Contemporary methodologies predominantly
+depend on external LLM evaluators, which are themselves susceptible to hallucinations and may present challenges in terms of domain
+adaptation. In this study, we propose the hypothesis that hallucination manifests as measurable irregularities within the internal layer
+dynamics of MLLMs, not merely due to distributional shifts but
+also in the context of layer-wise analysis of specific assumptions.
+By incorporating such modifications, HalluShift++ broadens the
+efficacy of hallucination detection from text-based large language
+models (LLMs) to encompass multimodal scenarios. Our codebase
+is available at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' style='color: #6c63ff;'>https://anonymous.4open.science/r/HalluShift_Plus</a>.">Show
+                            Abstract</button>
+                        </p>
+                        <a href="#" style="pointer-events: none; color: gray;">Coming Soon</a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <h3>HalluShift: Measuring Distribution Shifts towards Hallucination Detection in LLMs</h3>
+                    <p class="authors">Sharanya Dasgupta, Sujoy Nath, Arkaprabha Basu, Pourya Shamsolmoali, Swagatam Das
+                    </p>
+                    <p class="venue">IJCNN 2025</p>
+                    <div class="card-links">
+                        <button class="btn-text show-abstract"
+                            data-abstract="
+                        Large Language Models (LLMs) have recently garnered widespread attention due to their adeptness at generating innovative
+responses to the given prompts across a multitude of domains. However, LLMs often suffer from the inherent limitation of hallucinations and generate incorrect information while maintaining well-structured and coherent responses. In this work, we hypothesize
+that hallucinations stem from the internal dynamics of LLMs. Our observations indicate that, during passage generation, LLMs
+tend to deviate from factual accuracy in subtle parts of responses, eventually shifting toward misinformation. This phenomenon
+bears a resemblance to human cognition, where individuals may hallucinate while maintaining logical coherence, embedding
+uncertainty within minor segments of their speech. To investigate this further, we introduce an innovative approach, HALLUSHIFT,
+designed to analyze the distribution shifts in the internal state space and token probabilities of the LLM-generated responses. Our
+method attains superior performance compared to existing baselines across various benchmark datasets. Our codebase is available
+at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' style='color: #6c63ff;'>https://github.com/sharanya-dasgupta001/hallushift</a>.">Show
+                            Abstract</button>
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/11228484/" target="_blank">Proceedings link<i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <h3>From Vigilance to Veracity: Hallucination Detection, Mitigation, and Safety Enhancement in Large
+                        Language Models</h3>
+                    <p class="authors">Sharanya Dasgupta</p>
+                    <p class="venue">Master’s Thesis</p>
+                    <div class="card-links">
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=3dyAr0wAAAAJ&citation_for_view=3dyAr0wAAAAJ:d1gkVwhDpl0C"
+                            target="_blank"> View Thesis <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industry" class="section">
+        <div class="container">
+            <h2 class="section-title">Industry Experience</h2>
+            <div class="industry-list">
+                <div class="industry-item company-group">
+                    <div class="company-header">
+                        <h3>InfoEdge (naukri.com)</h3>
+                    </div>
+                    <div class="role-timeline">
+                        <div class="role-item">
+                            <div class="role-dot"></div>
+                            <h4>Data Scientist</h4>
+                            <span class="role-date">Jul 2025 - Present</span>
+                            <ul>
+                                <li>Working on Data Products.</li>
+                            </ul>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-dot"></div>
+                            <h4>Data Science Intern</h4>
+                            <span class="role-date">May 2024 - Jul 2024</span>
+                            <ul>
+                                <li>Built the <b>Apply Prediction</b> model to forecast application volume from job
+                                    attributes and provide actionable recommendations to optimize job descriptions.</li>
+                                <li>Worked on <b>Salary Estimation</b> model using multivariate outlier detection and
+                                    regression, improving compensation transparency.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <ul class="achievements-list">
+                <li><i class="fas fa-trophy"></i> Award or Recognition Name - Year</li>
+                <li><i class="fas fa-star"></i> Scholarship or Grant Name - Year</li>
+                <li><i class="fas fa-certificate"></i> Certification or Hackathon Win - Year</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">I'm always open to discussing new research opportunities and collaborations.</p>
+            <div class="contact-wrapper">
+                <a href="mailto:sharanyadasgupta@outlook.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>Send me an Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sharanya-dasgupta/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sharanya Dasgupta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="abstract-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p id="modal-abstract-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
