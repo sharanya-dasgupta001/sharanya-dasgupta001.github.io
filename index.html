@@ -54,6 +54,11 @@
                     aria-label="OpenReview"><i class="fas fa-book-open"></i></a>
                 <a href="https://github.com/sharanya-dasgupta001/" target="_blank" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0009-0006-6385-243X" target="_blank" aria-label="ORCID"><i
+                        class="fab fa-orcid"></i></a>
+                <a href="https://dblp.org/pid/405/3884.html" target="_blank" aria-label="DBLP"><i
+                        class="fas fa-database"></i></a>
+                <a href="#" target="_blank" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
                 <a href="mailto:sharanyadasgupta@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <a href="#about" class="btn btn-primary animate-fade-up delay-4">View My Work</a>
@@ -105,30 +110,48 @@
 
             <div class="publications-grid">
                 <div class="publication-card">
+                    <span class="badge-new">NEW</span>
+                    <h3>ARREST: Adversarial Resilient Regulation Enhancing Safety and Truth in Large Language Models
+                    </h3>
+                    <p class="authors">Sharanya Dasgupta, Sujoy Nath, Arkaprabha Basu, Swagatam Das</p>
+                    <p class="venue">EACL Main 2026</p>
+                    <div class="card-links">
+                        <a href="https://www.arxiv.org/pdf/2601.04394" target="_blank" class="btn-text"><i
+                                class="fas fa-file-pdf"></i> Arxiv</a>
+                        <a href="https://github.com/sharanya-dasgupta001/ARREST" target="_blank" class="btn-text"><i
+                                class="fab fa-github"></i> Code</a>
+                        <button class="btn-text show-abstract"
+                            data-abstract="Human cognition, driven by complex neurochemical processes, oscillates between imagination and reality and learns to self-correct whenever such subtle drifts lead to hallucinations or unsafe associations1. In recent years, LLMs have demonstrated remarkable performance in a wide range of tasks. However, they still lack human cognition to balance factuality and safety. Bearing the resemblance, we argue that both factual and safety failures in LLMs arise from a “representational misalignment” in their latent activation space, rather than addressing those as entirely separate alignment issues. We hypothesize that an external network, trained to understand the fluctuations, can selectively intervene in the model to regulate falsehood into truthfulness and unsafe output into safe output without fine-tuning the model parameters themselves. Reflecting the hypothesis, we propose ARREST (Adversarial Resilient Regulation Enhancing Safety and Truth), a unified framework that identifies and corrects drifted features, engaging both soft and hard refusals in addition to factual corrections. Our empirical results show that ARREST not only regulates misalignment but is also more versatile compared to the RLHF-aligned models in generating soft refusals due to adversarial training. We make our codebase available at <a href='https://github.com/sharanya-dasgupta001/ARREST' target='_blank' style='color: #6c63ff;'>https://github.com/sharanya-dasgupta001/ARREST</a>.">
+                            <i class="fas fa-align-left"></i> Abstract
+                        </button>
+                        <button class="btn-text show-citation" data-bibtex="">
+                            <i class="fas fa-quote-right"></i> Cite
+                        </button>
+                    </div>
+                </div>
+                <div class="publication-card">
                     <h3>Hallushift++: Bridging Language and Vision through Internal Representation Shifts for
                         Hierarchical Hallucinations in MLLMs</h3>
                     <p class="authors">Sujoy Nath, Arkaprabha Basu, Sharanya Dasgupta, Swagatam Das
                     </p>
-                    <p class="venue">ICVGIP 2025</p>
+                    <p class="venue">ICVGIP Oral 2025</p>
                     <div class="card-links">
+                        <a href="https://arxiv.org/pdf/2512.07687" target="_blank" class="btn-text"><i
+                                class="fas fa-file-pdf"></i> Arxiv</a>
+                        <a href="https://github.com/C0mRD/HalluShift_Plus" target="_blank" class="btn-text"><i
+                                class="fab fa-github"></i> Code</a>
                         <button class="btn-text show-abstract"
-                            data-abstract="Multimodal Large Language Models (MLLMs) have demonstrated
-remarkable capabilities in vision-language understanding tasks.
-While these models often produce linguistically coherent output,
-they often suffer from hallucinations, generating descriptions that
-are factually inconsistent with the visual content, potentially leading to adverse consequences. Therefore, the assessment of hallucinations in MLLM has become increasingly crucial in the model
-development process. Contemporary methodologies predominantly
-depend on external LLM evaluators, which are themselves susceptible to hallucinations and may present challenges in terms of domain
-adaptation. In this study, we propose the hypothesis that hallucination manifests as measurable irregularities within the internal layer
-dynamics of MLLMs, not merely due to distributional shifts but
-also in the context of layer-wise analysis of specific assumptions.
-By incorporating such modifications, HalluShift++ broadens the
-efficacy of hallucination detection from text-based large language
-models (LLMs) to encompass multimodal scenarios. Our codebase
-is available at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' style='color: #6c63ff;'>https://anonymous.4open.science/r/HalluShift_Plus</a>.">Show
-                            Abstract</button>
-                        </p>
-                        <a href="#" style="pointer-events: none; color: gray;">Coming Soon</a>
+                            data-abstract="Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in vision-language understanding tasks. While these models often produce linguistically coherent output, they often suffer from hallucinations, generating descriptions that are factually inconsistent with the visual content, potentially leading to adverse consequences. Therefore, the assessment of hallucinations in MLLM has become increasingly crucial in the model development process. Contemporary methodologies predominantly depend on external LLM evaluators, which are themselves susceptible to hallucinations and may present challenges in terms of domain adaptation. In this study, we propose the hypothesis that hallucination manifests as measurable irregularities within the internal layer dynamics of MLLMs, not merely due to distributional shifts but also in the context of layer-wise analysis of specific assumptions. By incorporating such modifications, HALLUSHIFT++ broadens the efficacy of hallucination detection from text-based large language models (LLMs) to encompass multimodal scenarios. Our codebase is available at <a href='https://github.com/C0mRD/HalluShift Plus' target='_blank' style='color: #6c63ff;'>https://github.com/C0mRD/HalluShift Plus</a>.">
+                            <i class="fas fa-align-left"></i> Abstract
+                        </button>
+                        <button class="btn-text show-citation" data-bibtex="@article{nath2025hallushift++,
+  title={HalluShift++: Bridging Language and Vision through Internal Representation Shifts for Hierarchical Hallucinations in MLLMs},
+  author={Nath, Sujoy and Basu, Arkaprabha and Dasgupta, Sharanya and Das, Swagatam},
+  journal={arXiv preprint arXiv:2512.07687},
+  year={2025}
+}">
+                            <i class="fas fa-quote-right"></i> Cite
+                        </button>
                     </div>
                 </div>
                 <div class="publication-card">
@@ -137,6 +160,12 @@ is available at <a href='https://anonymous.4open.science/r/HalluShift_Plus' targ
                     </p>
                     <p class="venue">IJCNN 2025</p>
                     <div class="card-links">
+                        <a href="https://arxiv.org/pdf/2504.09482" target="_blank" class="btn-text"><i
+                                class="fas fa-file-pdf"></i> Arxiv</a>
+                        <a href="https://ieeexplore.ieee.org/document/11228484/" target="_blank" class="btn-text"><i
+                                class="fas fa-book"></i> Proc.</a>
+                        <a href="https://github.com/sharanya-dasgupta001/hallushift" target="_blank" class="btn-text"><i
+                                class="fab fa-github"></i> Code</a>
                         <button class="btn-text show-abstract"
                             data-abstract="
                         Large Language Models (LLMs) have recently garnered widespread attention due to their adeptness at generating innovative
@@ -147,11 +176,21 @@ bears a resemblance to human cognition, where individuals may hallucinate while 
 uncertainty within minor segments of their speech. To investigate this further, we introduce an innovative approach, HALLUSHIFT,
 designed to analyze the distribution shifts in the internal state space and token probabilities of the LLM-generated responses. Our
 method attains superior performance compared to existing baselines across various benchmark datasets. Our codebase is available
-at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' style='color: #6c63ff;'>https://github.com/sharanya-dasgupta001/hallushift</a>.">Show
-                            Abstract</button>
-                        </p>
-                        <a href="https://ieeexplore.ieee.org/document/11228484/" target="_blank">Proceedings link<i
-                                class="fas fa-external-link-alt"></i></a>
+at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' style='color: #6c63ff;'>https://github.com/sharanya-dasgupta001/hallushift</a>.">
+                            <i class="fas fa-align-left"></i> Abstract
+                        </button>
+                        <button class="btn-text show-citation" data-bibtex="@inproceedings{dasgupta2025hallushift,
+  author={Dasgupta, Sharanya and Nath, Sujoy and Basu, Arkaprabha and Shamsolmoali, Pourya and Das, Swagatam},
+  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={HalluShift: Measuring Distribution Shifts towards Hallucination Detection in LLMs}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Uncertainty;Accuracy;Large language models;Neural networks;Coherence;Benchmark testing;Cognition;Fake news;hallucination detection;distribution shift;large language models;token probability},
+  doi={10.1109/IJCNN64981.2025.11228484}}">
+                            <i class="fas fa-quote-right"></i> Cite
+                        </button>
                     </div>
                 </div>
                 <div class="publication-card">
@@ -160,10 +199,19 @@ at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' s
                     <p class="authors">Sharanya Dasgupta</p>
                     <p class="venue">Master’s Thesis</p>
                     <div class="card-links">
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=3dyAr0wAAAAJ&citation_for_view=3dyAr0wAAAAJ:d1gkVwhDpl0C"
-                            target="_blank"> View Thesis <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://dspace.isical.ac.in/jspui/bitstream/10263/7564/1/M.tech%20_Sharanya_Dasgupta_CS2320.pdf"
+                            target="_blank" class="btn-text"><i class="fas fa-book-open"></i> Thesis</a>
+                        <button class="btn-text show-citation" data-bibtex="@article{dasgupta2025vigilance,
+  title={From Vigilance to Veracity: Hallucination Detection, Mitigation, and Safety Enhancement in Large Language Models},
+  author={Dasgupta, Sharanya},
+  year={2025},
+  publisher={Indian Statistical Institute, Kolkata}
+}">
+                            <i class="fas fa-quote-right"></i> Cite
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -181,9 +229,9 @@ at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' s
                             <div class="role-dot"></div>
                             <h4>Data Scientist</h4>
                             <span class="role-date">Jul 2025 - Present</span>
-                            <ul>
+                            <!-- <ul>
                                 <li>Working on Data Products.</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="role-item">
                             <div class="role-dot"></div>
@@ -239,8 +287,34 @@ at <a href='https://anonymous.4open.science/r/HalluShift_Plus' target='_blank' s
 
     <div id="abstract-modal" class="modal">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal close-abstract">&times;</span>
             <p id="modal-abstract-text"></p>
+        </div>
+    </div>
+
+    <div id="citation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal close-citation">&times;</span>
+            <h3>Cite this Work</h3>
+            <div class="bibtex-container">
+                <pre><code id="modal-bibtex-text"></code></pre>
+                <button id="copy-citation-btn" class="btn btn-primary"><i class="fas fa-copy"></i> Copy
+                    Citation</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="announcement-popup" class="announcement-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <div class="popup-icon">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="popup-text">
+                <h3>Exciting News!</h3>
+                <p>Our paper <strong>ARREST</strong> has been accepted at <strong>EACL Main 2026</strong>!</p>
+                <a href="#research" class="btn-popup">View Paper</a>
+            </div>
         </div>
     </div>
 

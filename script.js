@@ -79,42 +79,112 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Modal Logic
-    const modal = document.getElementById('abstract-modal');
-    const modalText = document.getElementById('modal-abstract-text');
-    const closeModal = document.querySelector('.close-modal');
+    const abstractModal = document.getElementById('abstract-modal');
+    const citationModal = document.getElementById('citation-modal');
+    const modalAbstractText = document.getElementById('modal-abstract-text');
+    const modalBibtexText = document.getElementById('modal-bibtex-text');
+    const closeModals = document.querySelectorAll('.close-modal');
     const showAbstractBtns = document.querySelectorAll('.show-abstract');
+    const showCitationBtns = document.querySelectorAll('.show-citation');
+    const copyCitationBtn = document.getElementById('copy-citation-btn');
 
+    // Open Abstract Modal
     showAbstractBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const abstract = btn.getAttribute('data-abstract');
-            modalText.innerHTML = abstract;
-            modal.style.display = 'block';
-            // Small delay to allow display:block to apply before adding opacity class for transition
-            setTimeout(() => {
-                modal.classList.add('show');
-            }, 10);
+            modalAbstractText.innerHTML = abstract;
+            openModal(abstractModal);
         });
     });
 
-    function hideModal() {
+    // Open Citation Modal
+    showCitationBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const bibtex = btn.getAttribute('data-bibtex');
+            modalBibtexText.textContent = bibtex;
+            openModal(citationModal);
+        });
+    });
+
+    function openModal(modal) {
+        modal.style.display = 'block';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+    }
+
+    function closeModal(modal) {
         modal.classList.remove('show');
         setTimeout(() => {
             modal.style.display = 'none';
-        }, 300); // Wait for transition to finish
+        }, 300);
     }
 
-    closeModal.addEventListener('click', hideModal);
+    // Close Modals (X button)
+    closeModals.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (abstractModal.classList.contains('show')) closeModal(abstractModal);
+            if (citationModal && citationModal.classList.contains('show')) closeModal(citationModal);
+        });
+    });
 
+    // Close on Click Outside
     window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            hideModal();
+        if (e.target === abstractModal) closeModal(abstractModal);
+        if (e.target === citationModal) closeModal(citationModal);
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (abstractModal.classList.contains('show')) closeModal(abstractModal);
+            if (citationModal && citationModal.classList.contains('show')) closeModal(citationModal);
         }
     });
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('show')) {
-            hideModal();
-        }
-    });
+    // Copy Citation Logic
+    if (copyCitationBtn) {
+        copyCitationBtn.addEventListener('click', () => {
+            const bibtex = modalBibtexText.textContent;
+            navigator.clipboard.writeText(bibtex).then(() => {
+                const originalText = copyCitationBtn.innerHTML;
+                copyCitationBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                copyCitationBtn.style.background = 'var(--secondary-color)'; // visual feedback
+
+                setTimeout(() => {
+                    copyCitationBtn.innerHTML = originalText;
+                    copyCitationBtn.style.background = ''; // reset
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    }
+    // Announcement Popup Logic
+    const announcementPopup = document.getElementById('announcement-popup');
+    const closePopupBtn = document.querySelector('.close-popup');
+    const viewPaperBtn = document.querySelector('.btn-popup');
+
+    // Check if announcement has been shown
+    if (!localStorage.getItem('arrest_announced')) {
+        setTimeout(() => {
+            announcementPopup.classList.add('show');
+        }, 1500); // 1.5s delay for effect
+    }
+
+    if (closePopupBtn) {
+        closePopupBtn.addEventListener('click', () => {
+            announcementPopup.classList.remove('show');
+            localStorage.setItem('arrest_announced', 'true');
+        });
+    }
+
+    if (viewPaperBtn) {
+        viewPaperBtn.addEventListener('click', () => {
+            announcementPopup.classList.remove('show');
+            localStorage.setItem('arrest_announced', 'true');
+        });
+    }
 });
